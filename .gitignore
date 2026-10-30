@@ -1,0 +1,77 @@
+# --- Secrets / environment ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# --- Virtual environments (conda env lives outside the repo, but just in case) ---
+.venv/
+venv/
+env/
+.conda/
+envs/
+
+# --- Testing / type checking / linting ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Local data: vector store, databases, uploads ---
+chroma_db/
+chroma/
+.chroma/
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+uploads/
+data/uploads/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Claude Code local settings ---
+.claude/settings.local.json
